@@ -1,6 +1,6 @@
 pipeline {
   agent any
-  atages {
+  stages {
     stage('Checkout'){
       deleteDir()
       checkout scm
