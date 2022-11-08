@@ -1,17 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('Checkout'){
-      deleteDir()
-      checkout scm
+    stage('build') {
+        steps {
+            sh 'node --version'
+        }
     }
-    
-    stage('NPM Install') {
-      withENV(["NPM_CONFIG_LOGLEVEL=warn"]) {
-        sh 'npm install'
-      }
-    }
-    
-    
   }
 }
