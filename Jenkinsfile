@@ -15,7 +15,7 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'node node_modules/@angular/cli/bin/ng build'
+        sh 'node --max-old-space-size=8192 ./node_modules/@angular/cli/bin/ng build'
       }
     }
 
