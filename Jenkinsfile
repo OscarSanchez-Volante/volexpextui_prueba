@@ -9,7 +9,7 @@ pipeline {
 
     stage('Install node') {
       steps {
-        sh 'npm install -g npm@9.1.1'
+        sh 'npm install'
       }
     }
 
