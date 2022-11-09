@@ -15,7 +15,7 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'ng build'
+        sh 'node node_modules/@angular/cli/bin/ng build -c mhsb'
       }
     }
 
