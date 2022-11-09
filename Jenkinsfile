@@ -9,7 +9,7 @@ pipeline {
 
     stage('Install node') {
       steps {
-        sh 'npm install --save-dev @angular/cli@9.0.0'
+        sh 'npm install'
       }
     }
 
