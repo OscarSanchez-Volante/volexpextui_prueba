@@ -21,7 +21,6 @@ pipeline {
     
     stage('test') {
       steps {   
-        sh ('./node_modules/karma/bin/karma start karma.conf.js')
         sh 'ng test --browsers=ChromeHeadless --watch=false'
       }
     }
