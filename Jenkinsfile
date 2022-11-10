@@ -18,6 +18,10 @@ pipeline {
         sh 'node --max-old-space-size=3000 ./node_modules/@angular/cli/bin/ng build'
       }
     }
+    
+    stage('test') {
+      sh 'ng test'
+    }
 
   }
   tools {
