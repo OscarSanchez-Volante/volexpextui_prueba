@@ -20,7 +20,9 @@ pipeline {
     }
     
     stage('test') {
-      sh 'ng test'
+      steps {
+        sh 'ng test'
+      }
     }
 
   }
