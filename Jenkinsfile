@@ -21,6 +21,7 @@ pipeline {
     
     stage('test') {
       steps {
+        sh 'npm install karma-jasmine karma-chrome-launcher jasmine-core --save-dev'
         sh 'ng test --browsers = ChromeHeadless --watch=false'
       }
     }
