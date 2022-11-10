@@ -21,7 +21,7 @@ pipeline {
     
     stage('test') {
       steps {
-        sh 'ng test'
+        sh 'ng test --browsers = ChromeHeadless --watch=false'
       }
     }
 
